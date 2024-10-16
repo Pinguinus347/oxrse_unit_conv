@@ -25,8 +25,11 @@ lb = pound
 
 # ampere
 
-# kelvin
+#Kelvin 
+
+# Celsius
 
 # mole
 
-# candela
+Pint = Unit(name='Pint', abbr='P', si=Litre, to_si_fun=lambda n: n * 0.568262)
+P = Pint
