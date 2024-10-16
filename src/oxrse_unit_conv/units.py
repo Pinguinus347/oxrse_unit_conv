@@ -1,5 +1,6 @@
 from oxrse_unit_conv.si import *
 from oxrse_unit_conv.meta.classes import Unit
+import math
 
 # second
 minute = Unit(name='minute', abbr='min', si=second, to_si_fun=lambda n: n * 60)
@@ -12,9 +13,11 @@ h = hour
 kilometer = Unit(name='kilometer', abbr="km", si=meter, to_si_fun=lambda n: n * 1000)
 km = kilometer
 
+# mile
 mile = Unit(name='mile', abbr='mile', si=meter, to_si_fun=lambda n: n * 1_609.344)
 
 # meter_sq
+meter_sq = Unit(name='meter_sq', abbr='sqm', si=meter, to_si_fun=lambda n: math.sqrt(n))
 
 # meter_cu
 
@@ -23,7 +26,13 @@ mile = Unit(name='mile', abbr='mile', si=meter, to_si_fun=lambda n: n * 1_609.34
 pound = Unit(name='pound', abbr='lb', si=kilogram, to_si_fun=lambda n: n * 0.4535924)
 lb = pound
 
+# mbar
+
+mbar = Unit(name='mbar', abb='mbar', si=pascal, to_si_fun = lambda n: n * 100)
+
 # ampere
+
+
 
 # kelvin
 
