@@ -17,9 +17,10 @@ km = kilometer
 mile = Unit(name='mile', abbr='mile', si=meter, to_si_fun=lambda n: n * 1_609.344)
 
 # meter_sq
-meter_sq = Unit(name='meter_sq', abbr='sqm', si=meter, to_si_fun=lambda n: math.sqrt(n))
+meter_sq = Unit(name='meter_sq', abbr='sqm', si=meter, to_si_fun=lambda n: pow(n,1/2))
 
 # meter_cu
+meter_cu = Unit(name='meter_cu', abbr='m^3', si=meter, to_si_fun=lambda n: pow(n,1/3))
 
 # kilogram
 
