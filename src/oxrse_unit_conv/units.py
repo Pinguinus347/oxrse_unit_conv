@@ -30,4 +30,5 @@ lb = pound
 # mole
 # nanomolar
 nanomolar = Unit(name='nanomolar', abbr='nM', si=molar, to_si_fun=lambda n: n * 1e-9)
+nM = nanomolar
 # candela
