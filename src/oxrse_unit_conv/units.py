@@ -1,6 +1,5 @@
 from oxrse_unit_conv.si import *
 from oxrse_unit_conv.meta.classes import Unit
-import math
 
 # second
 minute = Unit(name='minute', abbr='min', si=second, to_si_fun=lambda n: n * 60)
@@ -28,7 +27,6 @@ pound = Unit(name='pound', abbr='lb', si=kilogram, to_si_fun=lambda n: n * 0.453
 lb = pound
 
 # mbar
-
 mbar = Unit(name='mbar', abb='mbar', si=pascal, to_si_fun = lambda n: n * 100)
 
 # ampere
