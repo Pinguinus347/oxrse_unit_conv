@@ -28,9 +28,17 @@ lb = pound
 
 # ampere
 
-# kelvin
+#Kelvin 
+
+# Celsius
+
+
+# litre 
+Pint = Unit(name='Pint', abbr='P', si=Litre, to_si_fun=lambda n: n * 0.568262)
+P = Pint
 
 # mole
+
 # nanomolar
 nanomolar = Unit(name='nanomolar', abbr='nM', si=molar, to_si_fun=lambda n: n * 1e-9)
 nM = nanomolar

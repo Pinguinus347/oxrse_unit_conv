@@ -34,3 +34,7 @@ M = molar
 
 candela = classes.SIUnit("candela", "cd")
 cd = candela
+
+Litre = classes.SIUnit("liter", "L")
+L = Litre
+
