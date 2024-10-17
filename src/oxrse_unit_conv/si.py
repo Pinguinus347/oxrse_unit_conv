@@ -29,6 +29,9 @@ K = kelvin
 mole = classes.SIUnit("mole", "mol")
 mol = mole
 
+molar = classes.SIUnit("molar", "M")
+M = molar
+
 candela = classes.SIUnit("candela", "cd")
 cd = candela
 

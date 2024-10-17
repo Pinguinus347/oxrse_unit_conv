@@ -15,7 +15,10 @@ km = kilometer
 mile = Unit(name='mile', abbr='mile', si=meter, to_si_fun=lambda n: n * 1_609.344)
 
 # meter_sq
+kilometer_sq = Unit(name='kilometer_sq', abbr="km", si = meter_sq, to_si_fun=lambda n: n * 1000, exponent=2)
+km2 = kilometer_sq
 
+acre = Unit(name="acre", abbr="acre", si = meter_sq, to_si_fun=lambda n: n * 4046.86, exponent=1)
 # meter_cu
 
 # kilogram
@@ -29,7 +32,14 @@ lb = pound
 
 # Celsius
 
-# mole
 
+# litre 
 Pint = Unit(name='Pint', abbr='P', si=Litre, to_si_fun=lambda n: n * 0.568262)
 P = Pint
+
+# mole
+
+# nanomolar
+nanomolar = Unit(name='nanomolar', abbr='nM', si=molar, to_si_fun=lambda n: n * 1e-9)
+nM = nanomolar
+# candela
